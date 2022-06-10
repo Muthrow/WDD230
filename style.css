@@ -9,8 +9,8 @@ body {
     color: rgb(12, 3, 3);
 }
 
-#header, 
-#footer {
+.header, 
+.footer {
     background-color: crimson;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -18,9 +18,18 @@ body {
     display: flex;
     align-items: center;
     justify-items: center;
+    padding-left: 30px;
 }
 
-#header-p {
-    margin-left: 20px;
-    justify-items: center;
+footer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.footer-text {
+    grid-row: 0,1;
+}
+
+.last-modified {
+    /* grid-row: 1; */
 }

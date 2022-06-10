@@ -8,8 +8,33 @@
     <title>Assignment Portal</title>
 </head>
 <body>
-    <header class="header"><h1 id="header-p">Zack Pedersen</h1></header>
-    <div class="content"><p>content</p></div>
-    <footer class="footer">footer</footer>
+    <div class="content">
+        <header class="header"><h1 id="header-p">Zack Pedersen</h1></header>
+        <div class="content">
+            <div class="content-header">
+                <h3 class="content_title"><b>WDD 230: Assignment Portal</b></h3>
+                <hr class="title-sep">
+            </div>
+            <div class="content-body">
+                <ul id="front-page-list">
+                    <li class="front-page-list-item">Lesson 01: <a href="#">Course Assignment Portal</a></li>
+                    <li class="front-page-list-item">Lesson 01: <a href="#">Design Principals Document</a></li>
+                </ul>
+                <img src="IMG_0499.jpg" alt="Author standing in front of forested landscape." id="front-page-photo" width="300px">
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer-text">&#169;<span id="front-page-year"></span> Zack Pedersen | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p class="last-modified">Last Updated: <span id="front-page-modif"></span></p>
+            <script type="text/javascript">
+                const today = new Date();
+                const curr_year = today.getFullYear();
+                let lastModif = Date.parse(document.lastModified);
+
+                document.getElementById('front-page-year').innerHTML = curr_year
+                document.getElementById('front-page-modif').innerHTML = lastModif
+            </script>
+        </footer>
+    </div>
 </body>
 </html>
